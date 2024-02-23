@@ -1,8 +1,23 @@
-<header class="bg-blue-700 h-16 flex justify-center items-center">
-  <input
-    type="text"
-    class="h-10 w-96 rounded p-4"
-    placeholder="search your tasks"
-    [formControl]="searchControl"
-  />
+<header class="bg-blue-700 h-16 flex justify-center items-center sticky top-0 z-50">
+  <div class="relative flex items-center">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="text-black w-6 h-6 absolute left-4"
+    >
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+    <input
+      type="text"
+      class="h-10 w-96 rounded p-4 pl-12"
+      placeholder="search your tasks"
+      [formControl]="searchControl"
+    />
+  </div>
 </header>
