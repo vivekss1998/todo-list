@@ -37,6 +37,15 @@ export class AllTaskComponent {
 
   addTask() {
     console.log('addTask', this.newTask);
+    if (this.newTask.trim() === '') {
+      Swal.fire(
+        'Empty Task!',
+        'Please enter a task before adding.',
+        'warning'
+      );
+      return;
+    }
+  
     this.httpService.addTask(this.newTask).subscribe(() => {
       this.newTask = '';
       this.getAllTasks();
@@ -47,6 +56,7 @@ export class AllTaskComponent {
       );
     });
   }
+  
 
   getAllTasks() {
     this.httpService.getAllTasks().subscribe((result: any) => {
