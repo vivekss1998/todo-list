@@ -9,7 +9,7 @@ Before you begin, ensure that you have the following installed on your machine:
 
 Getting Started
 
-1. open project and go to angular17-todo-app or from terminal typ cd angular17-todo-app
+1. open project and go to angular17-todo-app or from terminal type cd angular17-todo-app
 2. in cmd write the following to install dependecies :- npm install
 3. in cmd write the following to start frontend :- npm start
 4. open one more cmd and write the following to start db server of json :- npm run server
